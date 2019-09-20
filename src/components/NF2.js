@@ -8,7 +8,7 @@ import { Container } from 'react-bootstrap'
 import { Button } from 'semantic-ui-react'
 import { MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
 
-const LESSONS = 'http://localhost:3000/lessons'
+const LESSONS = 'https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/lessons/'
  
 
 
@@ -59,7 +59,7 @@ class NF2 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 24,
+          standard_id: 12,
           student_id: id, 
           mastery: 1
       })
@@ -83,7 +83,7 @@ class NF2 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 24,
+          standard_id: 12,
           student_id: id, 
           mastery: 2
       })
@@ -107,7 +107,7 @@ class NF2 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 24,
+          standard_id: 12,
           student_id: id, 
           mastery: 3
       })

@@ -8,7 +8,7 @@ import { Container } from 'react-bootstrap'
 import { Button } from 'semantic-ui-react'
 import { MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
 
-const LESSONS = 'http://localhost:3000/lessons'
+const LESSONS = 'https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/lessons/'
  
 
 
