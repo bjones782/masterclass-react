@@ -11,7 +11,7 @@ import {RadialChart} from 'react-vis';
 
 // const myData = [{angle: 8}, {angle: 5}, {angle: 2}]
 
-const LESSONS = 'https://masterclass-backend.herokuapp.com/lessons/'
+const LESSONS = 'https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/lessons/'
  
 
 

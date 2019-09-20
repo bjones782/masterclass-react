@@ -59,7 +59,7 @@ class NBTA2 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 19,
+          standard_id: 7,
           student_id: id, 
           mastery: 1
       })
@@ -83,7 +83,7 @@ class NBTA2 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 19,
+          standard_id: 7,
           student_id: id, 
           mastery: 2
       })
@@ -107,7 +107,7 @@ class NBTA2 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 19,
+          standard_id: 7,
           student_id: id, 
           mastery: 3
       })
