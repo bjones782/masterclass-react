@@ -11,7 +11,7 @@ import {RadialChart} from 'react-vis';
 
 // const myData = [{angle: 8}, {angle: 5}, {angle: 2}]
 
-const LESSONS = 'http://localhost:3000/lessons'
+const LESSONS = 'https://masterclass-backend.herokuapp.com/lessons/'
  
 
 
@@ -62,7 +62,7 @@ class StandardsContainer extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 13,
+          standard_id: 1,
           student_id: id, 
           mastery: 1
       })
@@ -86,7 +86,7 @@ class StandardsContainer extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 13,
+          standard_id: 1,
           student_id: id, 
           mastery: 2
       })
@@ -110,7 +110,7 @@ class StandardsContainer extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 13,
+          standard_id: 1,
           student_id: id, 
           mastery: 3
       })

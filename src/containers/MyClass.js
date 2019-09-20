@@ -127,7 +127,7 @@ handleCommentChange = (e) => {
 createComment = (e) => {
   e.preventDefault()
   
-  fetch("http://localhost:3000/comments", {
+  fetch("https://masterclass-backend.herokuapp.com/comments", {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
@@ -149,7 +149,7 @@ createComment = (e) => {
 
 
   handleDelete = (e, s) => {
-    return fetch(`http://localhost:3000/students/${s.id}`, {
+    return fetch(`https://masterclass-backend.herokuapp.com/students/${s.id}`, {
       method: 'DELETE',
       headers: {'Content-Type': 'application/json'}
     }).then((data) => {
@@ -164,7 +164,7 @@ createComment = (e) => {
 
     handleCommentDelete = (e, comment) => {
       console.log("comment",e, comment)
-      return fetch(`http://localhost:3000/comments/${comment.id}`, {
+      return fetch(`https://masterclass-backend.herokuapp.com/comments/${comment.id}`, {
       method: 'DELETE',
       headers: {'Content-Type': 'application/json'}
     }).then((data) => {

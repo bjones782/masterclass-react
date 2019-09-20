@@ -1,13 +1,13 @@
 import ls from 'local-storage'
 
 
-const API = 'http://localhost:3000/profile/'
-const STUDENTS = 'http://localhost:3000/students/'
+const API = 'https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/profile/'
+const STUDENTS = 'https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/students/'
 // const STANDARDS = 'https://api.commonstandardsproject.com/api/v1/standard_sets/49FCDFBD2CF04033A9C347BFA0584DF0_D2604890_grade-04'
-const STANDARDS = 'http://localhost:3000/standards/'
-const LESSONS = 'http://localhost:3000/lessons/'
-const COMMENTS = 'http://localhost:3000/comments/'
-const PLANS = 'http://localhost:3000/plans/'
+const STANDARDS = 'https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/standards/'
+const LESSONS = 'https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/lessons/'
+const COMMENTS = 'https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/comments/'
+const PLANS = 'https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/plans/'
 
 
 export function getUser() {
@@ -23,7 +23,7 @@ export function getUser() {
 }
 
 export function getStudents() {
-    return fetch(STUDENTS).then(res => res.json())
+    return fetch(STUDENTS).then(res => res.json()).catch(err => console.log(err))
   };
 
 export function getStandards() {
@@ -47,7 +47,7 @@ export function getPlans() {
 }
 
 export function deleteStudent(id){
-    return fetch(`http://localhost:3000/students/${id}`, {
+    return fetch(`https://masterclass-backend.herokuapp.com/students/${id}`, {
         method: 'DELETE',
         body: JSON.stringify(),
     }).then(res => res.json())

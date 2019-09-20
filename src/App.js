@@ -59,7 +59,7 @@ import Videos from './components/Videos'
 
 
 
-const LESSONS = 'http://localhost:3000/lessons'
+const LESSONS = 'https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/lessons'
 
 
 class App extends React.Component {
@@ -108,6 +108,24 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    // getStudents().then(data => this.props.dispatch({
+    //   type: 'GET_STUDENTS',
+    //   data
+    // }));
+
+    // getStudentStandards(this.props.id).then(data => {
+    //   console.log(this.props)
+    //   console.log('data', data)
+    //   return this.props.dispatch({
+    //   type: 'GET_STUDENT_STANDARDS',
+    //   data
+    // })});
+
+    // getLessons().then(data => {
+    //   return this.props.dispatch({
+    //     type: 'GET_LESSONS',
+    //     data
+    //   })});
     this.fetchStudentData()
   }
 
@@ -133,7 +151,7 @@ goToNextPage = () =>
           <Route exact path='/' component={LandingPage} />
           <Route exact path='/login' render={() => (<Login />)}  />
           <Route exact path='/userprofile' render={() => (<UserProfile />)} />
-          <Route exact path='/standardscontainer' render={(props) => <StandardsContainer {...props} getStudentStandards={this.getStudentStandards} handleSave={this.handleSave} handleSave2={this.handleSave2} handleSave3={this.handleSave3} fetchStudentData={this.fetchStudentData}  /> } />
+          <Route exact path='/standardscontainer' render={(props) => <StandardsContainer {...props} getStudentStandards={this.getStudentStandards} fetchStudentData={this.fetchStudentData}  /> } />
           <Route exact path='/standardslist' render={(props) => <StandardsList {...props} handleSave={this.handleSave}/>} />
           <Route exact path='/donutchart' render={(props) => <DonutChart {...props} getStudentStandards={this.getStudentStandards}/>} />
           <Route exact path='/logout' render={() => (<Logout />)} />

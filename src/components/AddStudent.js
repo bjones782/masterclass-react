@@ -30,7 +30,7 @@ class AddStudent extends React.Component {
       this.props.dispatch({type: 'ADD_STUDENT', name: this.state.name})
       const newStudent = {student: {name: this.state.name, almost: false, notyet: false, mastered: false, user_id: 1}}
       
-      fetch("http://localhost:3000/students", {
+      fetch("https://masterclass-backend.herokuapp.com/students", {
         method: 'POST',
         headers:{
           'Content-Type': 'application/json',

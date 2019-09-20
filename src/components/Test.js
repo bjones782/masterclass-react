@@ -21,7 +21,7 @@ class Test extends React.Component {
       <div class="container-fluid">
       <div class="row flex-row flex-nowrap row-horizon">
           <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-              <div class="card card-block">Card
+              <div class="card card-block">
               <p>Card content</p>
               </div>
               

@@ -6,11 +6,9 @@ import {
   Header,
   Image,
   List,
-  Divider,
-  Segment,
-  Icon
+  Divider
 } from 'semantic-ui-react'
-// import { MDBBtn, MDBModal, MDBModalHeader, MDBModalBody, MDBContainer, MDBModalFooter } from "mdbreact";
+
 
 
 class Footer extends React.Component{
