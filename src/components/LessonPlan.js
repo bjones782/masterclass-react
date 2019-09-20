@@ -78,7 +78,7 @@ class LessonPlan extends React.Component {
         independent: this.state.independent,
         cfu: this.state.cfu}}
       
-      fetch("http://localhost:3000/plans", {
+      fetch("https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/plans/", {
         method: 'POST',
         headers:{
           'Content-Type': 'application/json',

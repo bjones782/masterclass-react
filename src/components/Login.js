@@ -63,7 +63,7 @@ class Login extends Component {
             const values = {user: {username: this.state.username, password: this.state.password, name: this.state.name, img_url: this.state.image, school: this.state.school }}
             console.log(values)
             // let user = this.state
-            fetch("http://localhost:3000/users", {
+            fetch("https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/users/", {
               method: 'POST',
               headers:{
                 'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ class Login extends Component {
             const values = {user: {username: this.state.username, password: this.state.password}}
             console.log("User:", values)
 
-            fetch("http://localhost:3000/login", {
+            fetch("https://cors-anywhere.herokuapp.com/https://masterclass-backend.herokuapp.com/login", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
