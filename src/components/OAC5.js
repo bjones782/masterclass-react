@@ -59,7 +59,7 @@ class OAC5 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 17,
+          standard_id: 5,
           student_id: id, 
           mastery: 1
       })
@@ -83,7 +83,7 @@ class OAC5 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 17,
+          standard_id: 5,
           student_id: id, 
           mastery: 2
       })
@@ -107,7 +107,7 @@ class OAC5 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 17,
+          standard_id: 5,
           student_id: id, 
           mastery: 3
       })

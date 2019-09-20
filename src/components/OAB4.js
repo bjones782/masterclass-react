@@ -59,7 +59,7 @@ class OAB4 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 16,
+          standard_id: 4,
           student_id: id, 
           mastery: 1
       })
@@ -83,7 +83,7 @@ class OAB4 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 16,
+          standard_id: 4,
           student_id: id, 
           mastery: 2
       })
@@ -107,7 +107,7 @@ class OAB4 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 16,
+          standard_id: 4,
           student_id: id, 
           mastery: 3
       })

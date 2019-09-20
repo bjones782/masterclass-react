@@ -59,7 +59,7 @@ class OAA2 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 14,
+          standard_id: 2,
           student_id: id, 
           mastery: 1
       })
@@ -83,7 +83,7 @@ class OAA2 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 14,
+          standard_id: 2,
           student_id: id, 
           mastery: 2
       })
@@ -107,7 +107,7 @@ class OAA2 extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-          standard_id: 14,
+          standard_id: 2,
           student_id: id, 
           mastery: 3
       })
